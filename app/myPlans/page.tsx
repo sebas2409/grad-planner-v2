@@ -8,24 +8,16 @@ import {
 import {Button} from "@/components/ui/button";
 import Header from "@/components/header/Header";
 
-// --- COMPONENTE HEADER (Full Width) ---
-
-
-// --- PÁGINA PRINCIPAL ---
 export default function MyPlansPage() {
     return (
         <div className="min-h-screen w-full bg-gray-50 font-sans text-slate-800 flex flex-col">
 
-            {/* 1. Header fuera del contenedor centrado (ocupa todo el ancho) */}
             <Header/>
 
-            {/* 2. Main Content Wrapper (ocupa el resto de la altura) */}
             <main className="flex-1 w-full">
 
-                {/* 3. Contenedor Centrado (aquí aplicamos el max-w y mx-auto) */}
                 <div className="mx-auto max-w-6xl px-4 py-8 space-y-6">
 
-                    {/* Título y Botones Superiores */}
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                         <h1 className="text-3xl font-bold text-gray-900">My Plans</h1>
                         <div className="flex gap-3">
@@ -40,10 +32,9 @@ export default function MyPlansPage() {
                         </div>
                     </div>
 
-                    {/* Tarjeta 1: Declared Plan */}
                     <div className="relative rounded-lg border border-gray-200 bg-white shadow-sm">
                         <div
-                            className="absolute -top-[1px] left-0 z-10 rounded-br-md rounded-tl-md bg-[#00C558] px-4 py-1.5 text-sm font-semibold text-white shadow-sm">
+                            className="absolute -top-px left-0 z-10 rounded-br-md rounded-tl-md bg-[#00C558] px-4 py-1.5 text-sm font-semibold text-white shadow-sm">
                             Declared Plan
                         </div>
 
