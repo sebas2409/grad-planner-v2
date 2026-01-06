@@ -91,7 +91,6 @@ export default function PlanDetailsPage() {
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-slate-800 pb-20">
-            <Header />
 
             {/* Top Navigation Bar with Stats */}
             <PlanStatsBar 
@@ -118,7 +117,7 @@ export default function PlanDetailsPage() {
                             onDownloadPDF={() => console.log("Download PDF")}
                         />
 
-                        {/* Collapsible: Transferred Credits */}
+                        {/* Transferred Credits */}
                         <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
                             <button className="w-full px-4 py-3 flex items-center justify-between bg-blue-50/50 hover:bg-blue-50 text-blue-600 font-bold text-sm">
                                 <span>Transferred Credits (46.5 Credits)</span>
@@ -147,7 +146,7 @@ export default function PlanDetailsPage() {
                         />
                     </div>
 
-                    {/* RIGHT COLUMN (Requirements) - Spans 4 cols */}
+                    {/* RIGHT COLUMN (Requirements) */}
                     <div className="lg:col-span-4 space-y-6">
                         <RequirementsPanel
                             categories={requirementCategories}

@@ -1,5 +1,6 @@
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import {ChevronDown, Grip, HelpCircle} from "lucide-react";
+import Link from "next/link";
 
 function Header() {
     return (
@@ -8,14 +9,14 @@ function Header() {
             <div className="flex h-16 w-full items-center justify-between px-6">
                 {/* Lado Izquierdo: Logo y Título */}
                 <div className="flex items-center gap-4">
-                    <div className="flex cursor-pointer flex-col items-center leading-none">
+                    <Link href='/' className="flex cursor-pointer flex-col items-center leading-none">
             <span className="font-serif text-xl font-bold tracking-widest text-white">
               BYU
             </span>
                         <span className="font-sans text-[0.55rem] font-semibold tracking-[0.2em] text-gray-300">
               IDAHO
             </span>
-                    </div>
+                    </Link>
 
                     <div className="h-8 w-px bg-gray-700"/>
                     <span className="text-xl font-normal text-gray-100">I-Plan</span>
