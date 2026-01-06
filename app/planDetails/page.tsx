@@ -184,7 +184,7 @@ const ReqCourseItem = ({code, name, credits, status}: ReqCourseItemProps) => (
 export default function PlanDetailsPage() {
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-slate-800 pb-20">
-            <Header/>
+
             {/* Top Navigation Bar (Stats) */}
             <div className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-20">
                 <div className="max-w-[1400px] mx-auto px-4 h-16 flex items-center justify-between">

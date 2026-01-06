@@ -6,13 +6,10 @@ import {
     Plus,
 } from "lucide-react";
 import {Button} from "@/components/ui/button";
-import Header from "@/components/header/Header";
 
 export default function MyPlansPage() {
     return (
         <div className="min-h-screen w-full bg-gray-50 font-sans text-slate-800 flex flex-col">
-
-            <Header/>
 
             <main className="flex-1 w-full">
 
